@@ -1,0 +1,233 @@
+*{
+    font-family: 'Livvic', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 30px;
+    width: 75vw;
+    margin: 50px auto;
+}
+
+a{
+    color: black;
+}
+
+header{ 
+    background: #bfe338;
+    width: 100vw;
+    height: 93px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header figure img{
+    width: 100px;
+    padding: 30px;
+}
+
+nav{
+    margin: 0 40px;
+}
+
+nav a{
+    color: #002b49;
+    font-weight: 500;
+    margin-right: 40px;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #002b49;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+} 
+
+
+#produto{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 30px;
+    padding: 60px;
+}
+
+section{
+    text-align: center;
+
+}
+
+.video{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+}
+
+section iframe{
+    width: 60vw;
+    height: 60vh;
+}
+
+.titulo{
+    margin: 10px;
+}
+
+
+.chamada{
+    background-color: #bfe338;
+    margin: 10px 0px 20px 0px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chamada:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+section h2, h3{
+    text-align: center;
+}
+
+#sobreNos{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+
+.titulo-sobrenos{
+    width: 20vw;
+}
+
+#depoimentos{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 20vw;
+    padding: 20px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+
+#testeGratis{
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagem-conteudoGratis{
+    width: 50%;
+}
+
+.titulo-testeGratis{
+    width: 50%;
+}
+
+.titulo-testeGratis input{
+    width: 60%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.titulo-testeGratis p{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 50px;
+}
+
+.redes-sociais{
+    display: inline-block;
+    width: 50px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.redes-sociais:hover{
+    bottom: 5px;
+}
+
+.whatsapp{
+    width: 50px;
+    position: fixed;
+    right: 5vh;
+    bottom: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.whatsapp:hover{
+    bottom: 70px;
+}
+
+
+
+@media (max-width: 1165px) {
+    .whatsapp h3{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    #sobreNos{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .titulo-sobrenos{
+        width: 60vw;
+    }
+
+}
+
+@media (max-width: 653px) {
+    .container{
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    header{
+        flex-flow: column;
+    }
+}
